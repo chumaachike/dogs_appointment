@@ -32,7 +32,7 @@ const AddHotelForm = () => {
   return (
     <div className="hotel-form">
       <h4>Add Hotel</h4>
-      <Form ref={formRef} onSubmit={ (e) => {handleSubmit(e)}}>
+      <Form ref={formRef} onSubmit={(e) => { handleSubmit(e); }}>
         <Form.Group className="mb-3" controlId="name">
           <Form.Label>Name</Form.Label>
           <Form.Control type="text" placeholder="Name" name="name" />

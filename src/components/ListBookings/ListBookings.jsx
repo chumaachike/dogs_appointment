@@ -3,11 +3,11 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { FetchedBookings } from '../../redux/bookings/bookings';
 import CardBooking from '../CardBooking/CardBooking';
-import './ListBookings.css'
+import './ListBookings.css';
+
 const ListBookings = () => {
   const dispatch = useDispatch();
   const bookings = useSelector((state) => state.bookings.data);
-  const status = useSelector((state) => state.bookings.status);
   useEffect(() => {
     dispatch(FetchedBookings());
   }, [dispatch]);

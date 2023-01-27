@@ -4,7 +4,7 @@ import React from 'react';
 import vanessa from '../../components/images/Vanessa_Bonito.png';
 import aron from '../../components/images/Aron.png';
 import jean from '../../components/images/Jean_Bulambo.png';
-import chuma from '../../components/images/chuma.png'
+import chuma from '../../components/images/chuma.png';
 import './about.css';
 
 const About = () => (
@@ -16,7 +16,7 @@ const About = () => (
       <div className="flip-card">
         <div className="flip-card-inner">
           <div className="flip-card-front">
-            <img src={vanessa} className="author-img" />
+            <img src={vanessa} className="author-img" alt="hhh" />
           </div>
           <div className="flip-card-back">
             <h5>Vanessa Bonito</h5>
@@ -28,7 +28,7 @@ const About = () => (
       <div className="flip-card">
         <div className="flip-card-inner">
           <div className="flip-card-front">
-            <img src={aron} className="author-img" />
+            <img src={aron} className="author-img" alt="hhh" />
           </div>
           <div className="flip-card-back">
             <h5>Aron Abraham</h5>
@@ -40,7 +40,7 @@ const About = () => (
       <div className="flip-card">
         <div className="flip-card-inner">
           <div className="flip-card-front">
-            <img src={jean} className="author-img" />
+            <img src={jean} className="author-img" alt="hhh" />
           </div>
           <div className="flip-card-back">
             <h5>Jean Bulambo </h5>
@@ -52,7 +52,7 @@ const About = () => (
       <div className="flip-card">
         <div className="flip-card-inner">
           <div className="flip-card-front">
-            <img src={chuma} className="author-img" />
+            <img src={chuma} className="author-img" alt="hhh" />
           </div>
           <div className="flip-card-back">
             <h5>Achike Chuma Edward</h5>

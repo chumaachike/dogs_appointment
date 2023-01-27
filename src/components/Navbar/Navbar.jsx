@@ -1,5 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable no-unused-expressions */
+/* eslint-disable no-confusing-arrow */
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
@@ -35,11 +36,12 @@ const Navigation = () => {
         <i className="fa-solid fa-bars" />
       </div>
       <ul className="nav-ul">
-      <div className="logo-div">
-        <img src={logo} alt="logo" className="logo-img" />
-      </div>
+        <div className="logo-div">
+          <img src={logo} alt="logo" className="logo-img" />
+        </div>
         <li>
-          <NavLink className={({ isActive }) => isActive ? "active-link" : "non-active"}
+          <NavLink
+            className={({ isActive }) => isActive ? 'active-link' : 'non-active'}
             to="/hotels"
             onClick={toggleMenu}
           >
@@ -47,7 +49,8 @@ const Navigation = () => {
           </NavLink>
         </li>
         <li>
-        <NavLink className={({ isActive }) => isActive ? "active-link" : "non-active"}
+          <NavLink
+            className={({ isActive }) => isActive ? 'active-link' : 'non-active'}
             to="/about"
             onClick={toggleMenu}
           >
@@ -55,7 +58,8 @@ const Navigation = () => {
           </NavLink>
         </li>
         <li>
-        <NavLink className={({ isActive }) => isActive ? "active-link" : "non-active"}
+          <NavLink
+            className={({ isActive }) => isActive ? 'active-link' : 'non-active'}
             to="/add-booking"
             onClick={toggleMenu}
           >
@@ -65,15 +69,17 @@ const Navigation = () => {
         {authenticated ? (
           <>
             <li>
-            <NavLink className={({ isActive }) => isActive ? "active-link" : "non-active"}
+              <NavLink
+                className={({ isActive }) => isActive ? 'active-link' : 'non-active'}
                 to="/my-bookings"
                 onClick={toggleMenu}
               >
                 MY BOOKINGS
-            </NavLink>
+              </NavLink>
             </li>
             <li>
-            <NavLink className={({ isActive }) => isActive ? "active-link" : "non-active"}
+              <NavLink
+                className={({ isActive }) => isActive ? 'active-link' : 'non-active'}
                 to="/add-hotel"
                 onClick={toggleMenu}
               >
@@ -83,7 +89,7 @@ const Navigation = () => {
             <li>
               <form onSubmit={handleSubmit}>
                 <button className="logout" type="submit">
-                  {" "}
+                  {' '}
                   LOGOUT
                 </button>
               </form>
@@ -91,7 +97,8 @@ const Navigation = () => {
           </>
         ) : (
           <li>
-            <NavLink className={({ isActive }) => isActive ? "active-link" : "non-active"}
+            <NavLink
+              className={({ isActive }) => isActive ? 'active-link' : 'non-active'}
               to="/"
               onClick={toggleMenu}
             >
